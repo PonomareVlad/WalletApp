@@ -1,0 +1,8 @@
+{
+  "name": "walletapp",
+  "version": "1.0.0",
+  "scripts": {
+    "ionic:serve": "npx es-dev-server --watch --port=80"
+  },
+  "author": "Ponomarev.Studio"
+}

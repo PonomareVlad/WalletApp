@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wallet App</title>
+    <meta name="viewport"
+          content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="color-scheme" content="dark light">
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="application-name" content="Wallet App"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Wallet App">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+    <link rel="apple-touch-icon" sizes="256x256" href="https://ponomarev.studio/images/logo/Inverted.256px.png">
+    <link data-react-helmet="true" rel="apple-touch-startup-image" href="/splashscreens/iphone5_splash.png"
+          media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"/>
+    <link data-react-helmet="true" rel="apple-touch-startup-image" href="/splashscreens/iphone6_splash.png"
+          media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"/>
+    <link data-react-helmet="true" rel="apple-touch-startup-image" href="/splashscreens/iphoneplus_splash.png"
+          media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"/>
+    <link data-react-helmet="true" rel="apple-touch-startup-image" href="/splashscreens/iphonex_splash.png"
+          media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"/>
+    <link data-react-helmet="true" rel="apple-touch-startup-image" href="/splashscreens/iphonexr_splash.png"
+          media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"/>
+    <link data-react-helmet="true" rel="apple-touch-startup-image" href="/splashscreens/iphonexsmax_splash.png"
+          media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"/>
+    <link data-react-helmet="true" rel="apple-touch-startup-image" href="/splashscreens/ipad_splash.png"
+          media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"/>
+    <link data-react-helmet="true" rel="apple-touch-startup-image" href="/splashscreens/ipadpro1_splash.png"
+          media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"/>
+    <link data-react-helmet="true" rel="apple-touch-startup-image" href="/splashscreens/ipadpro2_splash.png"
+          media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"/>
+    <link data-react-helmet="true" rel="apple-touch-startup-image" href="/splashscreens/ipadpro3_splash.png"
+          media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"/>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <link rel="stylesheet" href="/styles.css"/>
+
+    <script type="module">
+        import {modalController} from 'https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/index.esm.js';
+
+        window.modalController = modalController;
+    </script>
+</head>
+<body>
+<ion-app>
+    <ion-tabs>
+        <ion-tab tab="home" class="ion-page">
+            <ion-header collapse="fade" translucent="true">
+                <ion-toolbar>
+                    <ion-title>Header</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content fullscreen>
+                <h1 class="ion-margin-horizontal">Main Content</h1>
+                <ion-card>
+                    <img src="https://ponomarev.studio/images/logo/Inverted.png"/>
+                    <ion-card-header>
+                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                        <ion-card-title>Card Title</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        Keep close to Nature's heart... and break clear away, once in awhile,
+                        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                    </ion-card-content>
+                </ion-card>
+                <ion-card>
+                    <img src="https://ponomarev.studio/images/logo/Inverted.png"/>
+                    <ion-card-header>
+                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                        <ion-card-title>Card Title</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        Keep close to Nature's heart... and break clear away, once in awhile,
+                        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                    </ion-card-content>
+                </ion-card>
+                <ion-button expand="block" onclick="openCardModal()">Block Button</ion-button>
+            </ion-content>
+        </ion-tab>
+        <ion-tab tab="settings">
+            <ion-header collapse="fade" translucent="true">
+                <ion-toolbar>
+                    <ion-title>Header</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content fullscreen>
+                <h1>Settings Content</h1>
+                <!-- Default Input -->
+                <ion-input></ion-input>
+
+                <!-- Input with value -->
+                <ion-input value="custom"></ion-input>
+
+                <!-- Input with placeholder -->
+                <ion-input placeholder="Enter Input"></ion-input>
+
+                <!-- Input with clear button when there is a value -->
+                <ion-input clear-input value="clear me"></ion-input>
+
+                <!-- Number type input -->
+                <ion-input type="number" value="333"></ion-input>
+
+                <!-- Disabled input -->
+                <ion-input value="Disabled" disabled></ion-input>
+
+                <!-- Readonly input -->
+                <ion-input value="Readonly" readonly></ion-input>
+
+                <!-- Inputs with labels -->
+                <ion-item>
+                    <ion-label>Default Label</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label position="floating">Floating Label</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label position="fixed">Fixed Label</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label position="stacked">Stacked Label</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-button expand="block" onclick="presentAlert()">Block Button</ion-button>
+            </ion-content>
+        </ion-tab>
+        <ion-tab tab="settings2">
+            <ion-header collapse="fade" translucent="true">
+                <ion-toolbar>
+                    <ion-title>Header</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content fullscreen>
+                <ion-slides pager="true">
+                    <ion-slide>
+                        <h1>Slide 1</h1>
+                    </ion-slide>
+
+                    <ion-slide>
+                        <h1>Slide 2</h1>
+                    </ion-slide>
+
+                    <ion-slide>
+                        <h1>Slide 3</h1>
+                    </ion-slide>
+                </ion-slides>
+            </ion-content>
+        </ion-tab>
+        <ion-tab-bar slot="bottom" translucent="true">
+            <ion-tab-button tab="home">
+                <ion-label>Home</ion-label>
+                <ion-icon name="home"></ion-icon>
+            </ion-tab-button>
+            <ion-tab-button tab="settings">
+                <ion-label>Settings</ion-label>
+                <ion-icon name="settings"></ion-icon>
+            </ion-tab-button>
+            <ion-tab-button tab="settings2">
+                <ion-label>Test</ion-label>
+                <ion-icon name="settings"></ion-icon>
+            </ion-tab-button>
+        </ion-tab-bar>
+    </ion-tabs>
+</ion-app>
+<script src="app.mjs"></script>
+</body>
+</html>
