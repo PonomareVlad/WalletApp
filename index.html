@@ -53,122 +53,53 @@
         <ion-tab tab="home" class="ion-page">
             <ion-header collapse="fade" translucent="true">
                 <ion-toolbar>
-                    <ion-title>Header</ion-title>
+                    <ion-title>Cultozon</ion-title>
                 </ion-toolbar>
             </ion-header>
             <ion-content fullscreen>
-                <h1 class="ion-margin-horizontal">Main Content</h1>
-                <ion-card>
-                    <img src="https://ponomarev.studio/images/logo/Inverted.png"/>
+                <h1 class="ion-margin-horizontal">Ближайшие мероприятия</h1>
+                <ion-list-header lines="none">
+                    <ion-label style="font-size: 1rem">На этой неделе</ion-label>
+                </ion-list-header>
+                <ion-card onClick="openCardModal()">
+                    <img src="https://cache.cultozon.ru/images/raw/a365fc33-f9bd-40f0-b540-e1941946c0ea.jpg"/>
                     <ion-card-header>
-                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                        <ion-card-title>Card Title</ion-card-title>
+                        <ion-card-subtitle>15.06.2022 • ЦК "УРАЛ"</ion-card-subtitle>
+                        <ion-card-title>Последний Герой, Легендарные хиты группы КИНО</ion-card-title>
                     </ion-card-header>
                     <ion-card-content>
-                        Keep close to Nature's heart... and break clear away, once in awhile,
-                        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                        Музыкальное действо "Последний герой", созданный в необычном жанре спектакля - концерта,
+                        исполнен профессиональными музыкантами.
                     </ion-card-content>
                 </ion-card>
-                <ion-card>
-                    <img src="https://ponomarev.studio/images/logo/Inverted.png"/>
+                <ion-list-header lines="none">
+                    <ion-label style="font-size: 1rem">В этом месяце</ion-label>
+                </ion-list-header>
+                <ion-card onClick="openCardModal()">
+                    <img src="https://cache.cultozon.ru/images/raw/7af70a3e-f4cd-4279-be30-2bd5ae212ea3.jpg"/>
                     <ion-card-header>
-                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                        <ion-card-title>Card Title</ion-card-title>
+                        <ion-card-subtitle>06.01.2023 • КРК "Уралец"</ion-card-subtitle>
+                        <ion-card-title>Ледовое шоу «Настоящий Щелкунчик»</ion-card-title>
                     </ion-card-header>
                     <ion-card-content>
-                        Keep close to Nature's heart... and break clear away, once in awhile,
-                        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                        «Настоящий Щелкунчик» – современное и удачное прочтение классической истории Эрнста Теодора
+                        Гофмана.
                     </ion-card-content>
                 </ion-card>
-                <ion-button expand="block" onclick="openCardModal()">Block Button</ion-button>
-            </ion-content>
-        </ion-tab>
-        <ion-tab tab="settings">
-            <ion-header collapse="fade" translucent="true">
-                <ion-toolbar>
-                    <ion-title>Header</ion-title>
-                </ion-toolbar>
-            </ion-header>
-            <ion-content fullscreen>
-                <h1>Settings Content</h1>
-                <!-- Default Input -->
-                <ion-input></ion-input>
-
-                <!-- Input with value -->
-                <ion-input value="custom"></ion-input>
-
-                <!-- Input with placeholder -->
-                <ion-input placeholder="Enter Input"></ion-input>
-
-                <!-- Input with clear button when there is a value -->
-                <ion-input clear-input value="clear me"></ion-input>
-
-                <!-- Number type input -->
-                <ion-input type="number" value="333"></ion-input>
-
-                <!-- Disabled input -->
-                <ion-input value="Disabled" disabled></ion-input>
-
-                <!-- Readonly input -->
-                <ion-input value="Readonly" readonly></ion-input>
-
-                <!-- Inputs with labels -->
-                <ion-item>
-                    <ion-label>Default Label</ion-label>
-                    <ion-input></ion-input>
-                </ion-item>
-
-                <ion-item>
-                    <ion-label position="floating">Floating Label</ion-label>
-                    <ion-input></ion-input>
-                </ion-item>
-
-                <ion-item>
-                    <ion-label position="fixed">Fixed Label</ion-label>
-                    <ion-input></ion-input>
-                </ion-item>
-
-                <ion-item>
-                    <ion-label position="stacked">Stacked Label</ion-label>
-                    <ion-input></ion-input>
-                </ion-item>
-                <ion-button expand="block" onclick="presentAlert()">Block Button</ion-button>
-            </ion-content>
-        </ion-tab>
-        <ion-tab tab="settings2">
-            <ion-header collapse="fade" translucent="true">
-                <ion-toolbar>
-                    <ion-title>Header</ion-title>
-                </ion-toolbar>
-            </ion-header>
-            <ion-content fullscreen>
-                <ion-slides pager="true">
-                    <ion-slide>
-                        <h1>Slide 1</h1>
-                    </ion-slide>
-
-                    <ion-slide>
-                        <h1>Slide 2</h1>
-                    </ion-slide>
-
-                    <ion-slide>
-                        <h1>Slide 3</h1>
-                    </ion-slide>
-                </ion-slides>
             </ion-content>
         </ion-tab>
         <ion-tab-bar slot="bottom" translucent="true">
             <ion-tab-button tab="home">
-                <ion-label>Home</ion-label>
-                <ion-icon name="home"></ion-icon>
+                <ion-label>Скоро</ion-label>
+                <ion-icon name="ticket-outline"></ion-icon>
             </ion-tab-button>
             <ion-tab-button tab="settings">
-                <ion-label>Settings</ion-label>
-                <ion-icon name="settings"></ion-icon>
+                <ion-label>Подборки</ion-label>
+                <ion-icon name="sparkles-outline"></ion-icon>
             </ion-tab-button>
             <ion-tab-button tab="settings2">
-                <ion-label>Test</ion-label>
-                <ion-icon name="settings"></ion-icon>
+                <ion-label>Площадки</ion-label>
+                <ion-icon name="location-outline"></ion-icon>
             </ion-tab-button>
         </ion-tab-bar>
     </ion-tabs>

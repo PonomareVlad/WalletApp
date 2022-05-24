@@ -11,7 +11,7 @@
     transition: opacity .5s .5s;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-image: url("/splashscreens/full.webp");
+    background-image: url("/splashscreens/full.png");
 }
 
 @media (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
@@ -240,4 +240,19 @@ ion-slides {
 
         --ion-card-background: #1e1e1e;
     }
+}
+
+.is-organizer:before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 12px;
+    background-color: #27AE60;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-image: url("https://cultozon.ru/assets/Icon/Check.svg");
+    margin-right: 6px;
+    vertical-align: text-bottom;
 }

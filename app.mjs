@@ -6,42 +6,23 @@ customElements.define(
             this.innerHTML = `
           <ion-header translucent>
             <ion-toolbar>
-              <ion-title>Modal Content</ion-title>
+              <ion-title>Концерт</ion-title>
               <ion-buttons slot="end">
-                <ion-button onclick="dismissModal()">Close</ion-button>
+                <ion-button onclick="dismissModal()">Закрыть</ion-button>
               </ion-buttons>
             </ion-toolbar>
           </ion-header>
           <ion-content fullscreen>
-            <ion-list>
-              <ion-item>
-                <ion-avatar slot="start">
-                  <ion-img src="https://ionicframework.com/docs/demos/api/modal/avatar-gollum.jpg"/>
-                </ion-avatar>
-                <ion-label>
-                  <h2>Gollum</h2>
-                  <p>Sneaky little hobbitses!</p>
-                </ion-label>
-              </ion-item>
-              <ion-item>
-                <ion-avatar slot="start">
-                  <ion-img src="https://ionicframework.com/docs/demos/api/modal/avatar-frodo.jpg"/>
-                </ion-avatar>
-                <ion-label>
-                  <h2>Frodo</h2>
-                  <p>Go back, Sam! I'm going to Mordor alone!</p>
-                </ion-label>
-              </ion-item>
-              <ion-item>
-                <ion-avatar slot="start">
-                  <ion-img src="https://ionicframework.com/docs/demos/api/modal/avatar-samwise.jpg"/>
-                </ion-avatar>
-                <ion-label>
-                  <h2>Samwise</h2>
-                  <p>What we need is a few good taters.</p>
-                </ion-label>
-              </ion-item>
-            </ion-list>
+            <img src="https://cache.cultozon.ru/images/raw/a365fc33-f9bd-40f0-b540-e1941946c0ea.jpg"/>
+            <div class="ion-margin-horizontal">
+            <h1>Спектакль-концерт Последний Герой, Легендарные хиты группы КИНО</h1>
+            <div class="is-organizer">Билеты от организатора. Без наценок и сборов.</div>
+            <br>
+            <ion-button expand="block">800 - 2800 ₽</ion-button>
+            <br>
+            <h2>Описание</h2>
+            <p>Музыкальное действо "Последний герой", созданный в необычном жанре спектакля - концерта, исполнен профессиональными музыкантами. Пронзительные и простые истории из жизни Виктора Цоя, музыкантов группы "Кино" и их фанатов, людей которые любили и любят эту музыку. Истории - штрихи к портрету кумира миллионов . Факты его жизни, серьёзные, забавные, грустные случаи, немного мистики и конечно же песни, которые будут подпевать все зрители в зале.</p>
+</div>
           </ion-content>
         `;
         }
